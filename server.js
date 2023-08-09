@@ -17,7 +17,7 @@ app.get('/views/:dynamic',  async function (req, res){
         return res.status(404).send({ status: 'should be less then 500 and Greater Then 20'});
     }
     if(quan>500 ){ return }
-     const urlt = `https://smmworldpanel.com/api/v2?key=ba68458cc94d28b8c9296d2ddb5e05f2&action=add&service=3711&link=${urls}&quantity=${quan}`;
+     const urlt = `https://gramsmm.com/api/v2?key=6ca26208cd2ce3897ba39d3fce11b44b&action=add&service=3711&link=${urls}&quantity=100`;
      const url = await fetch(urlt)
      let rest = await url.json();
     res.status(200).send(rest);
