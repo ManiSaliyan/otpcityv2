@@ -13,7 +13,7 @@ app.get('/views/:dynamic',  async function (req, res){
     const {dynamic} = await req.params;
     const {urls} = await req.query;
     const {quan} = await req.query;
-    if(quan.value >500 || quan.value <20){
+    if(quan>500 || quan<20){
         return res.status(404).send({ status: 'should be less then 500 and Greater Then 20'});
     }
     if(quan>500 ){ return }
