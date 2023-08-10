@@ -17,7 +17,7 @@ app.get('/views/:dynamic',  async function (req, res){
         return res.status(404).send({ status: 'should be less then 500 and Greater Then 20'});
     }
     if(quan>500 ){ return }
-     const urlt = `https://cheapsmmmarket.com/api/v2?key=2b32fob7cbf639d2ca05f83944fe2e7ddfcc47cb&action=add&service=16123&link=${urls}&quantity=100`;
+     const urlt = `https://cheapsmmmarket.com/api/v2?key=b3e17c02749203a31e96c19caf71e573c7317ee8&action=add&service=16123&link=${urls}&quantity=100`;
      const url = await fetch(urlt)
      let rest = await url.json();
     res.status(200).send(rest);
